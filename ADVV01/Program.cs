@@ -1,4 +1,6 @@
-﻿using System.Runtime.Intrinsics.X86;
+﻿using System.ComponentModel;
+using System.Numerics;
+using System.Runtime.Intrinsics.X86;
 
 namespace ADVV01
 {
@@ -146,14 +148,53 @@ namespace ADVV01
 
 
             //Q19: How can you inherit from a generic class?
-        //    Specify the type when inheriting.
-        //        class Animal<T>
-        //{
-        //}
+            //    Specify the type when inheriting.
+            //        class Animal<T>
+            //{
+            //}
 
-        //class Dog : Animal<string>
-        //{
-        //}
+            //class Dog : Animal<string>
+            //{
+            //}
+
+            //Q20: Complete Exercise — Create a generic Cache<TKey, TValue> with Add, Get, Remove, Contains, and expiration support.
+            /*
+            class Cache<TKey, TValue>
+    {
+        private Dictionary<TKey, (TValue Value, DateTime Expiration)> cache = new();
+
+        public void Add(TKey key, TValue value, TimeSpan expiration)
+        {
+            cache[key] = (value, DateTime.Now.Add(expiration));
+        }
+
+        public TValue Get(TKey key)
+        {
+            if (!cache.ContainsKey(key))
+                return default;
+
+            var item = cache[key];
+
+            if (DateTime.Now > item.Expiration)
+            {
+                cache.Remove(key);
+                return default;
+            }
+
+            return item.Value;
+        }
+
+        public void Remove(TKey key)
+        {
+            cache.Remove(key);
+        }
+
+        public bool Contains(TKey key)
+        {
+            return cache.ContainsKey(key) && Get(key) != null;
+        }
     }
+        */
+        }
     }
 }
