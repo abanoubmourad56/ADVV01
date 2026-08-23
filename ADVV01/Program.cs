@@ -68,13 +68,20 @@
 
             //Q9: What is the new() constraint? Write an example.
             //It means T must have a public parameterless constructor.
-        //    class Test<T> where T : new()
+            //    class Test<T> where T : new()
+            //{
+            //    T Create()
+            //    {
+            //        return new T();
+            //    }
+            //}
+
+            //Q10: What is the interface constraint? Write an example.
+            //It means T must implement a specific interface.
+        //    class Test<T> where T : IDisposable
         //{
-        //    T Create()
-        //    {
-        //        return new T();
-        //    }
         //}
+
     }
     }
 }
