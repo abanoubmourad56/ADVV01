@@ -62,8 +62,18 @@
 
             //Q8: What is the class constraint? Write an example.
             //It means T must be a reference type.
-        //    class Test<T> where T : class
+            //    class Test<T> where T : class
+            //{
+            //}
+
+            //Q9: What is the new() constraint? Write an example.
+            //It means T must have a public parameterless constructor.
+        //    class Test<T> where T : new()
         //{
+        //    T Create()
+        //    {
+        //        return new T();
+        //    }
         //}
     }
     }
