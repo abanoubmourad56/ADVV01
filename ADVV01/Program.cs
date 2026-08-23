@@ -48,12 +48,17 @@
 
             //Q6: What is a generic interface? Write IRepository<T>.
             //A generic interface can work with different data types
-        //    interface IRepository<T>
-        //{
-        //    void Add(T item);
-        //    T Get(int id);
-        //}
+            //    interface IRepository<T>
+            //{
+            //    void Add(T item);
+            //    T Get(int id);
+            //}
 
+            //Q7: What is the struct constraint? Write an example.
+            //It means T must be a value type
+            //class Test<T> where T : struct
+            //{
+            //}
     }
     }
 }
