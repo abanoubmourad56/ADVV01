@@ -78,10 +78,15 @@
 
             //Q10: What is the interface constraint? Write an example.
             //It means T must implement a specific interface.
-        //    class Test<T> where T : IDisposable
-        //{
-        //}
+            //    class Test<T> where T : IDisposable
+            //{
+            //}
 
-    }
+            //Q11: What is the base class constraint? Write an example.
+            //It means T must inherit from a specific class.
+            //    class Test<T> where T : BaseClass
+            //{
+            //}
+        }
     }
 }
