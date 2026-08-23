@@ -136,6 +136,13 @@ namespace ADVV01
             //Covariance(out) → works with derived types.
             //Contravariance(in) → works with base types.
 
+            //Q18: How do static members work in generic types ?
+            //Each different type parameter has its own static member.
+            //    class Test<T>
+            //{
+            //    public static int Count;
+            //}
+
 
         }
     }
