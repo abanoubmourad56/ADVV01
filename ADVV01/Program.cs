@@ -132,6 +132,10 @@ namespace ADVV01
             //IEnumerable<object> objects = names;
 
 
+            //Q17: What is the difference between covariance and contravariance?
+            //Covariance(out) → works with derived types.
+            //Contravariance(in) → works with base types.
+
 
         }
     }
