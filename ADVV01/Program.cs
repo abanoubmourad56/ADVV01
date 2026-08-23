@@ -59,6 +59,12 @@
             //class Test<T> where T : struct
             //{
             //}
+
+            //Q8: What is the class constraint? Write an example.
+            //It means T must be a reference type.
+        //    class Test<T> where T : class
+        //{
+        //}
     }
     }
 }
