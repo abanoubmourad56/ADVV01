@@ -101,6 +101,9 @@ namespace ADVV01
             //default(int)    // 0
             //default(string) // null
 
+            //Q14: Write a SafeList<T> that returns default when the index is invalid.
+
+
         }
     }
 }
