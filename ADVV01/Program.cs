@@ -120,11 +120,17 @@ namespace ADVV01
             //    }
             //}
 
-            //Q15: What is contravariance? Explain the in keyword.
+            //Q16: What is contravariance? Explain the in keyword.
             //Contravariance allows a base type to be used where a derived type is expected.
             //The in keyword is used for input types.
             //Action<object> action = obj => Console.WriteLine(obj);
             //Action<string> textAction = action;
+
+            //Q15: What is covariance? Explain the out keyword.
+            //Covariance allows a more derived type to be used where a base type is expected.The out keyword is used for output types.
+            //IEnumerable<string> names = new List<string>();
+            //IEnumerable<object> objects = names;
+
 
 
         }
