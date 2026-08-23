@@ -1,4 +1,6 @@
-﻿namespace ADVV01
+﻿using System.Runtime.Intrinsics.X86;
+
+namespace ADVV01
 {
     internal class Program
     {
@@ -87,6 +89,18 @@
             //    class Test<T> where T : BaseClass
             //{
             //}
+
+            //Q12: How do you apply multiple constraints? Write an example.
+            //Use multiple constraints after where.
+            //    class Test<T> where T : Animal, IDisposable, new()
+            //{
+            //}
+
+            //Q13: What does the default keyword do in generics?
+            //It returns the default value of the generic type T.
+            //default(int)    // 0
+            //default(string) // null
+
         }
     }
 }
