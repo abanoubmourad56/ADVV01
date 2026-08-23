@@ -102,24 +102,31 @@ namespace ADVV01
             //default(string) // null
 
             //Q14: Write a SafeList<T> that returns default when the index is invalid.
-        //    class SafeList<T>
-        //{
-        //    private List<T> items = new List<T>();
+            //    class SafeList<T>
+            //{
+            //    private List<T> items = new List<T>();
 
-        //    public void Add(T item)
-        //    {
-        //        items.Add(item);
-        //    }
+            //    public void Add(T item)
+            //    {
+            //        items.Add(item);
+            //    }
 
-        //    public T Get(int index)
-        //    {
-        //        if (index < 0 || index >= items.Count)
-        //            return default;
+            //    public T Get(int index)
+            //    {
+            //        if (index < 0 || index >= items.Count)
+            //            return default;
 
-        //        return items[index];
-        //    }
-        //}
+            //        return items[index];
+            //    }
+            //}
 
-    }
+            //Q15: What is contravariance? Explain the in keyword.
+            //Contravariance allows a base type to be used where a derived type is expected.
+            //The in keyword is used for input types.
+            //Action<object> action = obj => Console.WriteLine(obj);
+            //Action<string> textAction = action;
+
+
+        }
     }
 }
