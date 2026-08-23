@@ -142,8 +142,18 @@ namespace ADVV01
             //{
             //    public static int Count;
             //}
+            //Test<int>.Count and Test<string>.Count are different values.
 
 
-        }
+            //Q19: How can you inherit from a generic class?
+        //    Specify the type when inheriting.
+        //        class Animal<T>
+        //{
+        //}
+
+        //class Dog : Animal<string>
+        //{
+        //}
+    }
     }
 }
